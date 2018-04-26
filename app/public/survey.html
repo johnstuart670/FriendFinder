@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Monster Match!
+	</title>
+
+	<!-- link to the Bootstrap stuff -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<header>
+		<div class="jumbotron">
+			<h1>This is a survey about how you would match up as friends against different monsters.</h1>
+			<p>Please answer each question as honestly as you can. At the end we will show you the monster from our database that you
+				best match with.</p>
+		</div>
+	</header>
+
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="nameinput">Please Enter Your Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Please input your name">
+			</div>
+			<div class="form-group">
+				<label for="Please upload a picture!">Picture URL</label>
+				<input type="text" class="form-control" id="pictureUser" placeholder="Please add a picture url">
+			</div>
+		</form>
+
+		<div class="row">
+			<h2>Please answer all questions - 1 being the lowest and 5 being the highest</h2>
+		</div>
+		<div class="container col-md-10" id="quiz">
+			<ul>
+				<li>
+					<h4>On a scale of 1 (saintly) to 5 (satan-ly), how evil are you?</h4>
+					<input type="radio" name="question0" value="1">1
+					<input type="radio" name="question0" value="2">2
+					<input type="radio" name="question0" value="3">3
+					<input type="radio" name="question0" value="4">4
+					<input type="radio" name="question0" value="5">5
+				</li>
+				<!-- question 2 -->
+				<li>
+					<h4>How much do you enjoy hoarding shiny objects?</h4>
+					<input type="radio" name="question1" value="1">1
+					<input type="radio" name="question1" value="2">2
+					<input type="radio" name="question1" value="3">3
+					<input type="radio" name="question1" value="4">4
+					<input type="radio" name="question1" value="5">5
+				</li>
+				<!-- question 3 -->
+				<li>
+					<h4>How much would you like to haunt an old house by the sea?</h4>
+					<input type="radio" name="question2" value="1">1
+					<input type="radio" name="question2" value="2">2
+					<input type="radio" name="question2" value="3">3
+					<input type="radio" name="question2" value="4">4
+					<input type="radio" name="question2" value="5">5
+				</li>
+				<!-- question 4 -->
+				<li>
+					<h4>How much do you like going for a run in the forest?</h4>
+					<input type="radio" name="question3" value="1">1
+					<input type="radio" name="question3" value="2">2
+					<input type="radio" name="question3" value="3">3
+					<input type="radio" name="question3" value="4">4
+					<input type="radio" name="question3" value="5">5
+				</li>
+				<!-- question 5 -->
+				<li>
+					<h4>If you could rate your flying ability, what would it be?</h4>
+					<input type="radio" name="question4" value="1">1
+					<input type="radio" name="question4" value="2">2
+					<input type="radio" name="question4" value="3">3
+					<input type="radio" name="question4" value="4">4
+					<input type="radio" name="question4" value="5">5
+				</li>
+				<!-- question 6 -->
+				<li>
+					<h4>How vulnerable are you to the power of friendship?</h4>
+					<input type="radio" name="question5" value="1">1
+					<input type="radio" name="question5" value="2">2
+					<input type="radio" name="question5" value="3">3
+					<input type="radio" name="question5" value="4">4
+					<input type="radio" name="question5" value="5">5
+				</li>
+				<!-- question 7 -->
+				<li>
+					<h4>How often do you find yourself putting curses on teenagers?</h4>
+					<input type="radio" name="question6" value="1">1
+					<input type="radio" name="question6" value="2">2
+					<input type="radio" name="question6" value="3">3
+					<input type="radio" name="question6" value="4">4
+					<input type="radio" name="question6" value="5">5
+				</li>
+				<!-- question 8 -->
+				<li>
+					<h4>How likely are you to appear in a mirror at the creepy house down the road?</h4>
+					<input type="radio" name="question7" value="1">1
+					<input type="radio" name="question7" value="2">2
+					<input type="radio" name="question7" value="3">3
+					<input type="radio" name="question7" value="4">4
+					<input type="radio" name="question7" value="5">5
+				</li>
+				<!-- question 9 -->
+				<li>
+					<h4>How likely are you to describe yourself as "pale"?</h4>
+					<input type="radio" name="question8" value="1">1
+					<input type="radio" name="question8" value="2">2
+					<input type="radio" name="question8" value="3">3
+					<input type="radio" name="question8" value="4">4
+					<input type="radio" name="question8" value="5">5
+				</li>
+				<!-- question 3 -->
+				<li>
+					<h4>How motivated are you by revenge?</h4>
+					<input type="radio" name="question9" value="1">1
+					<input type="radio" name="question9" value="2">2
+					<input type="radio" name="question9" value="3">3
+					<input type="radio" name="question9" value="4">4
+					<input type="radio" name="question9" value="5">5
+				</li>
+			</ul>
+
+			<button id="finishBtn">Submit Your Answers!</button>
+		</div>
+		<div class="row"></div>
+
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<h3>Here are some options to do things. </h3>
+		</div>
+		<div class="row">
+			<!-- spacer div -->
+			<div class="col-md-3"></div>
+
+			<div class="col-md-6">
+				<a href="/api/friends">
+					<button id="resultsBtn">See all possible results</button>
+				</a>
+			</div>
+
+			<!-- spacer div -->
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+
+	<div class="modal" id="bestModal"></div>
+	<!-- link to jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+	<!-- some javascript locally because apparently we don't need to do js on a larger scale -->
+	<script>
+		$(window).on("load", function () {
+
+			$("#finishBtn").on("click", function (event) {
+				event.preventDefault();
+				var newUser = {
+					"name": $("#name").val().trim(),
+					"photo": $("#pictureUser").val().trim(),
+					"scores": [
+						$('input[name = question0]:checked').val(),
+						$('input[name = question1]:checked').val(),
+						$('input[name = question2]:checked').val(),
+						$('input[name = question3]:checked').val(),
+						$('input[name = question4]:checked').val(),
+						$('input[name = question5]:checked').val(),
+						$('input[name = question6]:checked').val(),
+						$('input[name = question7]:checked').val(),
+						$('input[name = question8]:checked').val(),
+						$('input[name = question9]:checked').val()
+					]
+				};
+				// get
+				$.post("/api/friends", newUser)
+					.then(function (results) {
+						// make some stuff	
+						var Modal = new ModalBuild(results);
+						// update the html of bestModal
+						$("#bestModal").html(Modal)
+							// pop the modal
+							.modal('show');
+					});
+				// end of the function for clicking on submit button
+			});
+		});
+
+		// constructor function that will create content for the modal
+		function ModalBuild(item) {
+			// make the matchName info an H3 tag and concatenate w/ meaningful text
+			var matchName = $('<h3>').text("YOUR BEST MATCH IS: " + item.name);
+			// pull the image src from the item, put it into an image tag with an alt text
+			var matchImage = $('<img>')
+				.attr("src", item.photo)
+				.attr("alt", item.name)
+				.attr("width", "25%");
+			// make a MatchText item that is concatenating the score difference with some meaningful text
+			var matchText = $('<p>')
+				.text("The difference in your answer scores was only  " + item.score + " points!  You would be a great match!");
+			var takeAgain = $('<a>')
+				.attr("href", "/survey")
+				.html(
+					$('<button>')
+					.text("Take the survey again")
+				);
+			// make a div and append it with the image content and 
+			return $('<div>').append(matchName, matchImage, matchText, takeAgain)
+				.addClass("modal-content");
+		}
+	</script>
+</body>
+
+</html>
