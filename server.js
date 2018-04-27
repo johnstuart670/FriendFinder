@@ -7,7 +7,7 @@ var path = require("path");
 // save the import action in a variable
 var app = express();
 // save the port in a variable?
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // allows us to use the public folders in the server
 app.use(express.static(path.join(__dirname, './app/public')));
